@@ -503,29 +503,29 @@ def job2():
     info4 = "My wife told me he was whining about going swimming and wouldn't talk to her after she said no."
 
     if infoList == 1:
-        print info1
+        print (info1)
         time.sleep(3)
-        print info2
+        print (info2)
         time.sleep(3)
-        print info3
+        print (info3)
     if infoList == 2:
-        print info1
+        print (info1)
         time.sleep(3)
-        print info2
+        print (info2)
         time.sleep(3)
-        print info4
+        print (info4)
     if infoList == 3:
-        print info1
+        print (info1)
         time.sleep(3)
-        print info3
+        print (info3)
         time.sleep(3)
-        print info4
+        print (info4)
     if infoList == 4:
-        print info2
+        print (info2)
         time.sleep(3)
-        print info3
+        print (info3)
         time.sleep(3)
-        print info4
+        print (info4)
 
     time.sleep(8)
     print
