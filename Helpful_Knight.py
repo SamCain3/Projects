@@ -14,7 +14,7 @@ import decimal
 #Defining Functions
 
 def Intro():
-    print
+    print("")
     print("Initializing... please wait...")
     time.sleep(1)
     print(".")
@@ -23,25 +23,25 @@ def Intro():
     time.sleep(1)
     print(".")
     time.sleep(2)
-    print
+    print("")
     print("Wake up!")
-    print
+    print("")
     time.sleep(2)
     print("It's time to get to work!")
     print("Problems aren't going to solve themselves,")
     print("take this and just choose one,")
     print("I'll take care of the others.")
-    print
+    print("")
     time.sleep(5)
     print("*Your fellow knight slaps a paper down on your table*")
     time.sleep(4)
     print("*You roll out of bed and grab the paper*")
     time.sleep(4)
-    print
+    print("")
     global name
     name = input("A letter! And it's addressed to me: Sir ")
     time.sleep(1.5)
-    print
+    print("")
     print("Brave Sir " + str(name) + "! Congratulations on chasing out the great evil from our country,")
     print("repairs have been going well since your victory. However, we no")
     print("longer have enemies for you to battle, so I would like to request your")
@@ -49,7 +49,7 @@ def Intro():
     print("kingdom. Below is a list, please make haste in addressing them.")
     print("     -Your liege, King Whiteson")
     time.sleep(15)
-    print
+    print("")
     print("1. Farmer Todd needs help planning his crops for the season, go give him a hand.")
     # Randomize buy/sell price of seeds/crops as well as size of field, find best profit
     print("2. Lord Donovan's son has gone missing, please help find him.")
@@ -60,9 +60,9 @@ def Intro():
     # Randomize object he needs to make, amount of metal per object and metal he has, % of metal lost to melting
     # - Ask how many objects he can make
     time.sleep(8)
-    print
+    print("")
     time.sleep(1)
-    print
+    print("")
 
 
 
@@ -84,17 +84,17 @@ def job1():
 
 #name = "Filler"
 
-    print
+    print("")
     time.sleep(1)
-    print
+    print("")
     time.sleep(1)
     print("*You happen to live very close to Farmer Todd's farm, so your journey isn't long*")
-    print
+    print("")
     time.sleep(4)
     print(str(name) + "! Thank you so very much for accepting my request. You see,")
     print("my son is off assisting with the relief efforts, and while I can handle all the sowing")
     print("and harvesting, he would always take care of the planning aspects of our work.")
-    print
+    print("")
     time.sleep(10)
     print("I hear the King speaks very highly of your intellect, but I won't be able")
     print("to give you much of a hand at all, so I do hope you're prepared.")
@@ -103,12 +103,12 @@ def job1():
 
     fm = 0
     while fm == 0:
-        print
+        print("")
         time.sleep(3)
         fmready = input("Are you ready to get started? ")
         if fmready == "Yes" or fmready == "yes" or fmready == "y" or fmready == "Y":
             time.sleep(1)
-            print
+            print("")
             print("Wonderful!")
             time.sleep(1)
             print("So here's what I know")
@@ -124,15 +124,15 @@ def job1():
 #print area
 
     time.sleep(1)
-    print
+    print("")
     time.sleep(1)
-    print
+    print("")
     print("My son mapped out our fields before he left and wrote them down here for me")
-    print
+    print("")
     time.sleep(3)
     print("*You check his paper, scrawled hastily are the words '" + str(l) + " feet long' and '" +str(w) + " feet wide'*")
     time.sleep(4)
-    print
+    print("")
     time.sleep(2)
 
 # Crops Available (Beet, Cucumber, Strawberry, Honeydew)
@@ -156,7 +156,7 @@ def job1():
     harea = decimal.Decimal(random.randrange(200,500))/100
 
     time.sleep(1)
-    print
+    print("")
     time.sleep(1)
     if cropsAvailable == 1:
         print("Beets will need "+ str(barea) + " square feet of space to grow properly.")
@@ -200,7 +200,7 @@ def job1():
 
 
     time.sleep(1)
-    print
+    print("")
     time.sleep(1)
     if cropsAvailable == 1:
         print("I can buy beet seeds for $" +str(bbuyr) +" and I should be able to sell them for $"+str(bsellr)+" per unit.")
@@ -222,7 +222,7 @@ def job1():
 
 
 # Calculations
-    print
+    print("")
     bamount = decimal.Decimal(area/barea)
     bamountr = math.trunc(bamount)
 #print bamountr
@@ -235,7 +235,7 @@ def job1():
     hamount = decimal.Decimal(area/harea)
     hamountr = math.trunc(hamount)
 #print hamountr
-    print
+    print("")
 
     bprofit = math.trunc((bsell-bbuy)*bamountr)
 #print bprofit
@@ -269,11 +269,11 @@ def job1():
         while a == 0:
             Ans = input("Which crop would bring me the best profit?: ")
             if Ans != bestAns and Ans != bestAns1:
-                print
+                print("")
                 print("Are you sure about that? Something doesn't seem right there.")
             else:
                 a = 1
-        print
+        print("")
         print("I'll take your word for it, that sounds good to me.")
         b = 0
         time.sleep(1)
@@ -284,9 +284,9 @@ def job1():
             else:
             #print bprofit
             #print Ans1
-                print
+                print("")
                 print("That really doesn't sound right to me.")
-        print
+        print("")
         c = 0
         time.sleep(1)
         print("Wow! That sounds great!")
@@ -298,7 +298,7 @@ def job1():
             else:
             #print bamountr
             #print Ans2
-                print
+                print("")
                 print("No way! I don't think you counted right.")
 
     if bestProfit == cprofit:
@@ -308,11 +308,11 @@ def job1():
         while a == 0:
             Ans = input("Which crop would bring me the best profit?: ")
             if Ans != bestAns and Ans != bestAns1:
-                print
+                print("")
                 print("Are you sure about that? Something doesn't seem right there.")
             else:
                 a = 1
-        print
+        print("")
         print("I'll take your word for it, that sounds good to me.")
         b = 0
         time.sleep(1)
@@ -323,9 +323,9 @@ def job1():
             else:
             #print cprofit
             #print Ans1
-                print
+                print("")
                 print("That really doesn't sound right to me.")
-        print
+        print("")
         c = 0
         time.sleep(1)
         print("Wow! That sounds great!")
@@ -337,7 +337,7 @@ def job1():
             else:
             #print camountr
             #print Ans2
-                print
+                print("")
                 print("No way! I don't think you counted right.")
 
     if bestProfit == sprofit:
@@ -347,11 +347,11 @@ def job1():
         while a == 0:
             Ans = input("Which crop would bring me the best profit?: ")
             if Ans != bestAns and Ans != bestAns1:
-                print
+                print("")
                 print("Are you sure about that? Something doesn't seem right there.")
             else:
                 a = 1
-        print
+        print("")
         print("I'll take your word for it, that sounds good to me.")
         b = 0
         time.sleep(1)
@@ -362,9 +362,9 @@ def job1():
             else:
             #print sprofit
             #print Ans1
-                print
+                print("")
                 print("That really doesn't sound right to me.")
-        print
+        print("")
         c = 0
         time.sleep(1)
         print("Wow! That sounds great!")
@@ -376,7 +376,7 @@ def job1():
             else:
             #print samountr
             #print Ans2
-                print
+                print("")
                 print("No way! I don't think you counted right.")
 
     if bestProfit == hprofit:
@@ -386,11 +386,11 @@ def job1():
         while a == 0:
             Ans = input("Which crop would bring me the best profit?: ")
             if Ans != bestAns and Ans != bestAns1:
-                print
+                print("")
                 print("Are you sure about that? Something doesn't seem right there.")
             else:
                 a = 1
-        print
+        print("")
         print("I'll take your word for it, that sounds good to me.")
         b = 0
         time.sleep(1)
@@ -401,9 +401,9 @@ def job1():
             else:
             #print hprofit
             #print Ans1
-                print
+                print("")
                 print("That really doesn't sound right to me.")
-        print
+        print("")
         c = 0
         time.sleep(1)
         print("Wow! That sounds great!")
@@ -415,13 +415,13 @@ def job1():
             else:
             #print hamountr
             #print Ans2
-                print
+                print("")
                 print("No way! I don't think you counted right.")
 
-    print
+    print("")
     print("Well it's all settled then! I'll get started on that as soon as I can!")
     time.sleep(3)
-    print
+    print("")
 
 # Random Event (75% chance to occur, 3 possibilities)*******************************
 
@@ -446,7 +446,7 @@ def job1():
 
 
     time.sleep(2)
-    print
+    print("")
     time.sleep(2)
     print("*Farmer Todd jogs off to start sowing his field, he shouts his thanks over his shoulder*")
     time.sleep(1)
@@ -462,18 +462,18 @@ def job2():
 
 #name = "Filler"
 #if needtabs = yes:
-    print
+    print("")
     time.sleep(1)
-    print
+    print("")
     time.sleep(1)
     print("*You reach Lord Donovan's manor after a small journey, it is tucked away in the forest behind a winding path*")
-    print
+    print("")
     time.sleep(1)
-    print
+    print("")
     time.sleep(6)
     print("Ah yes, Sir "+ str(name) + ", I've been expecting you. As you were informed,")
     print("my son Philip went missing when he was outside playing yesterday.")
-    print
+    print("")
     time.sleep(6)
     print("I do not take the safety of my family lightly,")
     print("I want your word that you will bring him home safely.")
@@ -481,16 +481,16 @@ def job2():
     
     ld = 0
     while ld == 0:
-        print
+        print("")
         time.sleep(4)
         ldready = input("Can you promise me that? ")
         if ldready == "Yes" or ldready == "yes" or ldready == "y" or ldready == "Y":
             time.sleep(1)
-            print
+            print("")
             print("I appreciate that.")
             time.sleep(1)
             print("This is what I know so far")
-            print
+            print("")
             ld = 1
 
 # Information
@@ -529,16 +529,16 @@ def job2():
         print (info4)
 
     time.sleep(8)
-    print
+    print("")
     print("That is all I have heard, please be on your way and work swiftly.")
     time.sleep(3)
-    print
+    print("")
     time.sleep(1)
     print("*You set out to look for Philip as Lord Donovan continues to pace anxiously*")
     time.sleep(4)
-    print
+    print("")
     time.sleep(1)
-    print
+    print("")
     time.sleep(1)
 
 # Branching paths
@@ -569,7 +569,7 @@ def job2():
     m = 0
     d = 0
     while m == 0:
-        print
+        print("")
         time.sleep(1)
         print("1. "+ way1)
         if d == 0:
@@ -581,31 +581,31 @@ def job2():
         if d == 0:
             time.sleep(2)
         time.sleep(2)
-        print
+        print("")
         chooseWay = input("Which path seems right? (Village, River, or Forest): ")
         d = 1
         time.sleep(1)
         if chooseWay == "Village" or chooseWay == "village":
-            print
+            print("")
             print("*You head back to the village*")
             time.sleep(3)
-            print
+            print("")
             time.sleep(1)
             print("*Along your way you see plenty of children playing, but no sign of Philip*")
             time.sleep(4)
-            print
+            print("")
             time.sleep(1)
-            print
+            print("")
             time.sleep(1)
             print("*You're getting nowhere, so you decide to head back*")
             time.sleep(3)
-            print
+            print("")
             time.sleep(1)
             print("It's getting late, I can't afford to wander around aimlessly.")
             time.sleep(4)
-            print
+            print("")
             time.sleep(1)
-            print
+            print("")
             time.sleep(1)
             print("*You find yourself back at the break in the path*")
             time.sleep(3)
@@ -613,26 +613,26 @@ def job2():
             pie = "coconut cream"
 
         if chooseWay == "Forest" or chooseWay == "forest":
-            print
+            print("")
             print("*You head further into the forest*")
             time.sleep(3)
-            print
+            print("")
             time.sleep(1)
             print("*As you weave through the trees, you see no evidence that Philip was here*")
             time.sleep(4)
-            print
+            print("")
             time.sleep(1)
-            print
+            print("")
             time.sleep(1)
             print("*You're getting nowhere, so you decide to head back*")
             time.sleep(3)
-            print
+            print("")
             time.sleep(1)
             print("It's getting late, I can't afford to wander around aimlessly.")
             time.sleep(4)
-            print
+            print("")
             time.sleep(1)
-            print
+            print("")
             time.sleep(1)
             print("*You find yourself back at the break in the path*")
             time.sleep(3)
@@ -640,56 +640,56 @@ def job2():
             pie = "blackberry"
         
         if chooseWay == "River" or chooseWay == "river":
-            print
+            print("")
             print("*You head in the direction of the river*")
             time.sleep(3)
-            print
+            print("")
             time.sleep(1)
             print("*As you're walking, you notice small footprints, you decide to follow them*")
             time.sleep(4)
-            print
+            print("")
             time.sleep(1)
-            print
+            print("")
             time.sleep(1)
             print("*You hear a scream in the distance*")
             time.sleep(3)
-            print
+            print("")
             print("Help!")
             time.sleep(1)
             print("HELP!")
             time.sleep(1)
             print("HEEEEELLLLLLP!!!")
             time.sleep(4)
-            print
+            print("")
             print("*You notice a small figure waving their arms on a small island in the middle of the river*")
             time.sleep(4)
             print("That must be Philip.")
             time.sleep(1)
-            print
+            print("")
             time.sleep(1)
             print("*You head down the bank towards the water*")
             time.sleep(3)
-            print
+            print("")
             time.sleep(1)
             m = 1
 
 # Finding Child
 
-    print
+    print("")
     time.sleep(1)
     print("*You can clearly see Philip is stranded with no way to get back to shore*")
     time.sleep(3)
-    print
+    print("")
     time.sleep(1)
     print("*He shouts to you from a distance*")
     time.sleep(2)
     print("'Sir Knight! I swam over here, but got stuck when the waters sped up, please help me'")
     time.sleep(4)
-    print
+    print("")
     time.sleep(1)
     print("Well this is certainly a different job than I signed up for, but I guess I'm up to the task")
     time.sleep(4)
-    print
+    print("")
     time.sleep(1)
 
 # Problem
@@ -716,35 +716,35 @@ def job2():
 
     print("*You look over the tools you have at your disposal*")
     time.sleep(3)
-    print
+    print("")
     time.sleep(1)
     print("*There is a sign nearby claiming that the island is "+ str(riverWidth) + " meters away*")
     time.sleep(4)
-    print
+    print("")
     time.sleep(1)
     print("*There is a large coil of excess rope next to a rope swing*")
     time.sleep(3)
-    print
+    print("")
     time.sleep(1)
     print("*You figure you could probably pull him back across the river if you could get the rope to him*")
     time.sleep(5)
-    print
+    print("")
     time.sleep(1)
     print("*You grab the coil of rope and a large rock sitting nearby it*")
     time.sleep(5)
     print("*The rock feels heavy, about "+str(rockWeight)+" Kilograms if you were to estimate*")
     time.sleep(6)
-    print
+    print("")
     time.sleep(1)
     print("From your days in the King's forces, you gained a knack for estimating your own strength")
     time.sleep(5)
     print("You estimate that you could throw this rock at approximately " +str(initialSpeed)+ " meters per second.")
     time.sleep(6)
-    print
+    print("")
     time.sleep(1)
     print("*You tie the end of the rope securely around your rock*")
     time.sleep(5)
-    print
+    print("")
 
 # Question
 
@@ -756,11 +756,11 @@ def job2():
         if int(Ans) == int(corrAns):
                print("Well, here goes nothing")
                time.sleep(1)
-               print
+               print("")
                time.sleep(3)
                print("*You throw the rock with all your might at a "+str(Ans) +" degree angle*")
                time.sleep(2)
-               print
+               print("")
                print("*                          ")
                time.sleep(0.05)
                print("    *                      ")
@@ -801,16 +801,16 @@ def job2():
                time.sleep(0.05)
                print("*Thud*")
                time.sleep(1)
-               print
+               print("")
                g = 1
         else:
                print("Well, here goes nothing")
                time.sleep(1)
-               print
+               print("")
                time.sleep(3)
                print("*You throw the rock with all your might at a "+str(Ans) +" degree angle*")
                time.sleep(2)
-               print
+               print("")
                print("*                          ")
                time.sleep(0.05)
                print("    *                      ")
@@ -859,36 +859,36 @@ def job2():
                time.sleep(2)
                print("You missed...")
                time.sleep(3)
-               print
+               print("")
                time.sleep(1)
                print("*You pull back in your rope and prepare for another toss*")
                time.sleep(1)
-               print
+               print("")
 
     print("*You land your shot perfectly on target, narrowly missing Philip in the process*")
     time.sleep(6)
-    print
+    print("")
     time.sleep(1)
     print("*Philip grabs hold of the rope and you reel him in to shore*")
     time.sleep(2)
-    print
+    print("")
     time.sleep(0.2)
-    print
+    print("")
     time.sleep(0.7)
-    print
+    print("")
     time.sleep(0.2)
-    print
+    print("")
     time.sleep(0.7)
-    print
+    print("")
     time.sleep(0.2)
-    print
+    print("")
     time.sleep(2)
 
 # Conclusion
 
     print("*You bring Philip ashore and reunite him with his parents*")
     time.sleep(4)
-    print
+    print("")
     time.sleep(1)
     print("Thank you Sir "+ str(name)+ ", I never once doubted your ability.")
     time.sleep(2)
@@ -909,34 +909,34 @@ def job3():
 #name = "filler"
 
     time.sleep(1)
-    print
+    print("")
     time.sleep(1)
     print("*You arrive at the blacksmith's house after a short journey down the road*")
     time.sleep(3)
-    print
+    print("")
     time.sleep(1)
-    print
+    print("")
     time.sleep(3)
     print("Sir "+ str(name) + "! Thank you so much for coming, my orders are extremely")
     print("backed up and your help will be invaluable.")
     time.sleep(6)
-    print
+    print("")
     print("Blacksmithing is hard work, and you'll have to be in")
     print("top shape if we want to finish before sundown.")
     time.sleep(6)
 
     bs = 0
     while bs == 0:
-        print
+        print("")
         time.sleep(4)
         bsready = input("Are you ready to get started? ")
         if bsready == "Yes" or bsready == "yes" or bsready == "y" or bsready == "Y":
             time.sleep(1)
-            print
+            print("")
             print("Great!")
             time.sleep(1)
             print("So here's the situation")
-            print
+            print("")
             bs = 1
 
 
@@ -950,7 +950,7 @@ def job3():
     print("can only get up to about " + str(furnaceTemp) + " degrees today.")
 
     time.sleep(8)
-    print
+    print("")
 #  Gold (1945F), Iron (2700F), Steel (2800F)
 
     materialAvailable = random.randint(1,3)
@@ -961,10 +961,10 @@ def job3():
         while y == 0:
             chosenMetal = input("Which metal should I use? (Gold or Iron): ")
             if chosenMetal == "Iron" and furnaceTemp <= 2700:
-                print
+                print("")
                 print("I'm not sure my furnace is hot enough to use that type of metal.")
             elif chosenMetal == "iron" and furnaceTemp <= 2700:
-                print
+                print("")
                 print("I'm not sure my furnace is hot enough to use that type of metal.")
             else:
                 y = 1
@@ -975,7 +975,7 @@ def job3():
     
         while z == 0:
             questionTemp = input("Do you think my furnace is hot enough to melt these? (Y or N): ")
-            print
+            print("")
             if furnaceTemp >= 2700 and questionTemp == "Y":
                 print("You know what? You're right, I think we'll be fine.")
                 time.sleep(1)
@@ -991,10 +991,10 @@ def job3():
         while y == 0:
             chosenMetal = input("Which metal should I use? (Iron or Steel): ")
             if chosenMetal == "Steel" and furnaceTemp <= 2800:
-                print
+                print("")
                 print("I'm not sure my furnace is hot enough to use that type of metal.")
             elif chosenMetal == "steel" and furnaceTemp <= 2800:
-                print
+                print("")
                 print("I'm not sure my furnace is hot enough to use that type of metal.")
             else:
                 y = 1
@@ -1007,10 +1007,10 @@ def job3():
         while y == 0:
             chosenMetal = input("Which metal should I use? (Gold or Steel): ")
             if chosenMetal == "Steel" and furnaceTemp <= 2800:
-                print
+                print("")
                 print("I'm not sure my furnace is hot enough to use that type of metal.")
             elif chosenMetal == "steel" and furnaceTemp <= 2800:
-                print
+                print("")
                 print("I'm not sure my furnace is hot enough to use that type of metal.")
  
             else:
@@ -1025,7 +1025,7 @@ def job3():
 
 #  Helmet (2-4lbs), Sword (4-7lbs), Dagger (1-3lbs)
 
-    print
+    print("")
     time.sleep(1)
     gearNeeded = random.randint(1,3)
     if gearNeeded == 1:
@@ -1060,7 +1060,7 @@ def job3():
 
 
     time.sleep(4)
-    print
+    print("")
     if chosenMetal == "iron" or chosenMetal == "Iron":
         materialAmount = random.randint(45, 120)
     if chosenMetal == "gold" or chosenMetal == "Gold":
@@ -1083,7 +1083,7 @@ def job3():
 
     print("Even worse, my ore isnt perfect, so we'll be losing about " + str(materialLost) + " percent of the mass once we melt it down.")
     time.sleep(8)
-    print
+    print("")
 
 # Calculations
 
@@ -1108,23 +1108,23 @@ def job3():
             print("Really? I would've have no idea how to start, thanks for the help!")
             x = 1
         else:
-            print
+            print("")
             print("I don't know why, but that doesn't seem right, maybe run your numbers again?")
 
     time.sleep(4)
-    print
+    print("")
     time.sleep(1)
-    print
+    print("")
     time.sleep(1)
-    print
+    print("")
     print("*You and Henry get to work on the "+ str(chosenItem) + "s*")
-    print
+    print("")
     time.sleep(2)
-    print
+    print("")
     time.sleep(2)
-    print
+    print("")
     time.sleep(2)
-    print
+    print("")
 
 # Random Event (75% chance to occur, 3 possibilities)*******************
     global p
@@ -1137,10 +1137,10 @@ def job3():
             pie = input("Sir " + str(name) + ", random question, but what's your favorite fruit? ")
             print("Ooh that's a good one, mine are strawberries")
             time.sleep(2)
-            print
+            print("")
             time.sleep(1)
-            print
-            print
+            print("")
+            print("")
             print("*You both get back to work*")
     
     elif p == 2:
@@ -1154,10 +1154,10 @@ def job3():
                 print("Ah, that's a shame, I believe they're in season at the moment.")
                 pie = "apple"
         time.sleep(2)
-        print
+        print("")
         time.sleep(1)
-        print
-        print
+        print("")
+        print("")
         print("*You both get back to work*")
     elif p == 3:
         pie = ""
@@ -1172,21 +1172,21 @@ def job3():
                 pie = 0
                 cake = 1
         time.sleep(2)
-        print
+        print("")
         time.sleep(1)
-        print
-        print
+        print("")
+        print("")
         time.sleep(1)
         print("*You both get back to work*")
 #**************************************************
 
 
     time.sleep(2)
-    print
+    print("")
     time.sleep(2)
-    print
+    print("")
     time.sleep(2)
-    print
+    print("")
     time.sleep(2)
     print("*After a long day of hard work, you successfully helped make "+ str(corrAns)+ " " + str(chosenItem) +"s!*")
     time.sleep(8)
@@ -1195,8 +1195,8 @@ def job3():
 
 
 def runPath(choosePath):
-    print
-    print
+    print("")
+    print("")
     time.sleep(1)
     if choosePath == "1":
         print("Farming? That doesn't seem too bad, let's go with that one.")
@@ -1206,11 +1206,11 @@ def runPath(choosePath):
         print("I always wanted to see how my gear was made, let's try out blacksmithing.")
  
     time.sleep(3)
-    print
+    print("")
     time.sleep(1)
     print("*You head off down the road, glad to have an easy job for once.*")
     time.sleep(2)
-    print
+    print("")
 
     #Job 1 Path run
     if choosePath == "1":        
@@ -1235,16 +1235,16 @@ def runPath(choosePath):
         #print("Start 3")
         job3()
 
-    print
+    print("")
     time.sleep(1)
-    print
+    print("")
     time.sleep(2)
     if p != 0:
         print("Before you head out the door, " +str(NPC) + "'s wife hands you a freshly made " +str(pie) +" pie.")
         time.sleep(4)
         print("That's awfully sweet of her, and I certainly feel like I've been repaid for my work now.")
         time.sleep(8)
-        print
+        print("")
         time.sleep(1)
         print("You return home and chat with your fellow Knight about your days as you both snack on your pie,")
         
@@ -1253,7 +1253,7 @@ def runPath(choosePath):
         time.sleep(2)
         print("She sure works quick, I certainly feel like I've been repaid for my work now.")
         time.sleep(8)
-        print
+        print("")
         time.sleep(1)
         print("You return home and chat with your fellow Knight about your days as you both snack on your cake,")
 
@@ -1262,10 +1262,10 @@ def runPath(choosePath):
 
     time.sleep(5)
     print("it seems he had a good time helping "+ str(NPCs) + ", you're a tad jealous")
-    print
+    print("")
     time.sleep(6)
     print("Maybe those other 2 jobs could've been even more fun.")
-    print
+    print("")
     time.sleep(5)
     
 
