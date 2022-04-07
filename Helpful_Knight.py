@@ -1,6 +1,7 @@
 # Physics 53 Final Project
 # Samuel Cain
 # 5-29-20
+# Updated 4-07-22
 
 
 # Imports
@@ -38,7 +39,7 @@ def Intro():
     time.sleep(4)
     print
     global name
-    name = raw_input("A letter! And it's addressed to me: Sir ")
+    name = input("A letter! And it's addressed to me: Sir ")
     time.sleep(1.5)
     print
     print("Brave Sir " + str(name) + "! Congratulations on chasing out the great evil from our country,")
@@ -70,7 +71,7 @@ def Intro():
 def choosePath():
     path = ""
     while path != "1" and path != "2" and path != "3":
-        path = raw_input("Which job will you take today? (1, 2, or 3?): ")
+        path = input("Which job will you take today? (1, 2, or 3?): ")
 
     return path
 
@@ -104,7 +105,7 @@ def job1():
     while fm == 0:
         print
         time.sleep(3)
-        fmready = raw_input("Are you ready to get started? ")
+        fmready = input("Are you ready to get started? ")
         if fmready == "Yes" or fmready == "yes" or fmready == "y" or fmready == "Y":
             time.sleep(1)
             print
@@ -266,7 +267,7 @@ def job1():
         bestAns1 = "Beets"
         a = 0
         while a == 0:
-            Ans = raw_input("Which crop would bring me the best profit?: ")
+            Ans = input("Which crop would bring me the best profit?: ")
             if Ans != bestAns and Ans != bestAns1:
                 print
                 print("Are you sure about that? Something doesn't seem right there.")
@@ -305,7 +306,7 @@ def job1():
         bestAns1 = "Carrots"
         a = 0
         while a == 0:
-            Ans = raw_input("Which crop would bring me the best profit?: ")
+            Ans = input("Which crop would bring me the best profit?: ")
             if Ans != bestAns and Ans != bestAns1:
                 print
                 print("Are you sure about that? Something doesn't seem right there.")
@@ -344,7 +345,7 @@ def job1():
         bestAns1 = "Strawberries"
         a = 0
         while a == 0:
-            Ans = raw_input("Which crop would bring me the best profit?: ")
+            Ans = input("Which crop would bring me the best profit?: ")
             if Ans != bestAns and Ans != bestAns1:
                 print
                 print("Are you sure about that? Something doesn't seem right there.")
@@ -383,7 +384,7 @@ def job1():
         bestAns1 = "Honeydew"
         a = 0
         while a == 0:
-            Ans = raw_input("Which crop would bring me the best profit?: ")
+            Ans = input("Which crop would bring me the best profit?: ")
             if Ans != bestAns and Ans != bestAns1:
                 print
                 print("Are you sure about that? Something doesn't seem right there.")
@@ -482,7 +483,7 @@ def job2():
     while ld == 0:
         print
         time.sleep(4)
-        ldready = raw_input("Can you promise me that? ")
+        ldready = input("Can you promise me that? ")
         if ldready == "Yes" or ldready == "yes" or ldready == "y" or ldready == "Y":
             time.sleep(1)
             print
@@ -581,7 +582,7 @@ def job2():
             time.sleep(2)
         time.sleep(2)
         print
-        chooseWay = raw_input("Which path seems right? (Village, River, or Forest): ")
+        chooseWay = input("Which path seems right? (Village, River, or Forest): ")
         d = 1
         time.sleep(1)
         if chooseWay == "Village" or chooseWay == "village":
@@ -928,7 +929,7 @@ def job3():
     while bs == 0:
         print
         time.sleep(4)
-        bsready = raw_input("Are you ready to get started? ")
+        bsready = input("Are you ready to get started? ")
         if bsready == "Yes" or bsready == "yes" or bsready == "y" or bsready == "Y":
             time.sleep(1)
             print
@@ -958,7 +959,7 @@ def job3():
         print("I currently have access to Gold and Iron")
         y = 0
         while y == 0:
-            chosenMetal = raw_input("Which metal should I use? (Gold or Iron): ")
+            chosenMetal = input("Which metal should I use? (Gold or Iron): ")
             if chosenMetal == "Iron" and furnaceTemp <= 2700:
                 print
                 print("I'm not sure my furnace is hot enough to use that type of metal.")
@@ -973,7 +974,7 @@ def job3():
         z = 0
     
         while z == 0:
-            questionTemp = raw_input("Do you think my furnace is hot enough to melt these? (Y or N): ")
+            questionTemp = input("Do you think my furnace is hot enough to melt these? (Y or N): ")
             print
             if furnaceTemp >= 2700 and questionTemp == "Y":
                 print("You know what? You're right, I think we'll be fine.")
@@ -988,7 +989,7 @@ def job3():
                 
         y = 0
         while y == 0:
-            chosenMetal = raw_input("Which metal should I use? (Iron or Steel): ")
+            chosenMetal = input("Which metal should I use? (Iron or Steel): ")
             if chosenMetal == "Steel" and furnaceTemp <= 2800:
                 print
                 print("I'm not sure my furnace is hot enough to use that type of metal.")
@@ -1004,7 +1005,7 @@ def job3():
         print("I currently have access to Gold and Steel")
         y = 0
         while y == 0:
-            chosenMetal = raw_input("Which metal should I use? (Gold or Steel): ")
+            chosenMetal = input("Which metal should I use? (Gold or Steel): ")
             if chosenMetal == "Steel" and furnaceTemp <= 2800:
                 print
                 print("I'm not sure my furnace is hot enough to use that type of metal.")
@@ -1133,7 +1134,7 @@ def job3():
     if p == 1:
         pie = ""
         while pie == "":
-            pie = raw_input("Sir " + str(name) + ", random question, but what's your favorite fruit? ")
+            pie = input("Sir " + str(name) + ", random question, but what's your favorite fruit? ")
             print("Ooh that's a good one, mine are strawberries")
             time.sleep(2)
             print
@@ -1145,7 +1146,7 @@ def job3():
     elif p == 2:
         pie = ""
         while pie == "":
-            pie = raw_input("Sir " + str(name) + ", random question, but do you happen to like strawberries? ")
+            pie = input("Sir " + str(name) + ", random question, but do you happen to like strawberries? ")
             if pie == "yes" or pie == "Yes" or pie == "y" or pie == "Y":
                 print("Splendid! They're my favorite, I believe they're in season now too.")
                 pie = "strawberry"
@@ -1161,7 +1162,7 @@ def job3():
     elif p == 3:
         pie = ""
         while pie == "":
-            pie = raw_input("Sir " + str(name) + ", random question, but do you like pie? ")
+            pie = input("Sir " + str(name) + ", random question, but do you like pie? ")
             if pie == "yes" or pie == "Yes" or pie == "y" or pie == "Y":
                 print("Splendid! My wife makes the best pies, you'll have to take one home.")
                 pie = "strawberry"
@@ -1276,4 +1277,4 @@ while playAgain == "yes" or playAgain == "Yes" or playAgain == "y" or playAgain 
     Intro()
     choice = choosePath()
     runPath(choice) # 1, 2, or 3
-    playAgain = raw_input("Do you want to play again?: ")
+    playAgain = input("Do you want to play again?: ")
